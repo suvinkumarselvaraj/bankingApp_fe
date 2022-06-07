@@ -1,0 +1,20 @@
+.PreLogin__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black;
+    border-color: black; */
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+.PreLogin__text{
+    margin-bottom: 15px;
+}
+.PreLogin__bankLogo{
+    width: auto;
+    height: 50px;
+}

@@ -1,0 +1,76 @@
+.Login__container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+    
+    width: 300px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    border-color: 1px solid black;
+}
+.Login__container__account__no,.Login__container__account__password{
+    margin-top: 15px;
+}
+
+.Login__container__logo{
+    width: auto;
+    height: 50px;
+}
+.Login__container__input__field{
+    width: 180px;
+    height: 30px;
+}
+.Login__button{
+    width: 190px;
+    height: 35px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 49px; */
+    /* border-radius: 5px; */
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none; 
+    color:black;
+    margin-top: 15px;
+    
+}
+
+
+.Login__button:hover{
+    background-color: #92BA92 ;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+.Login__Open__button{
+    margin-top: 15px;
+    width: 190px;
+    height: 35px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 49px; */
+    /* border-radius: 5px; */
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none; 
+    color:black;
+    margin-top: 15px;
+}
+.Login__Open__button:hover{
+    background-color: #92BA92 ;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+.admin__login{
+    float: right;
+}

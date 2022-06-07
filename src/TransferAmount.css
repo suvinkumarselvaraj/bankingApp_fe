@@ -1,0 +1,25 @@
+.proceed{
+    margin-top: 15px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+.proceed:hover{
+    background-color: #92BA92 ;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px; 
+}
+.line1,.line2,.line3{
+    margin-top: 20px;
+}
+.uinput{
+    margin-top: -1px;
+    margin-top: 5px;
+}

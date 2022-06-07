@@ -1,0 +1,11 @@
+.OpenAccountPage__container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.OpenAccountPage__partition{
+    max-width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    
+}

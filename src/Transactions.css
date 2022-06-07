@@ -1,0 +1,27 @@
+.Transactions__container{
+  
+    width: 100%;
+
+}
+.row1__container{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content:space-evenly;
+    text-align: center;
+    border-bottom: 1px solid rgb(184, 170, 170);
+    
+}
+.field{
+    width: 100px;
+}
+.row2__container{
+    width: 100%;
+     display: flex;
+     align-items: center;
+     padding: 10px;
+     justify-content:space-evenly;
+     text-align: center;
+     border-bottom: 1px solid rgb(184, 170, 170);
+ }

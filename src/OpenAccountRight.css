@@ -1,0 +1,45 @@
+.OpenAccountRight__container{
+    padding: 15px;
+    margin-top: 100px;
+    width: 50%;
+}
+.uinput{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color: #008000;
+    height: 30px;
+    border-style: solid;
+}
+.line11{
+    margin-top: 120px;
+}
+.OpenAccount__submit__button{
+    margin-top: 15px;
+    width: 170px;
+    height: 35px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 49px; */
+    /* border-radius: 5px; */
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none; 
+    color:black;
+    margin-top: 15px;
+}
+.OpenAccount__submit__button:hover{
+background-color: #92BA92 ;
+color:white;
+font-weight: bold;
+border-radius: 5px;
+} 
+.uinput{
+    border-color: #92BA92 ;
+}
+.number_input{
+    width:165px;
+    
+}

@@ -1,0 +1,68 @@
+html, body {
+    max-width: 100%;
+    
+}
+.Header__container{
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+    max-width:100%;
+    overflow: hidden;
+    align-items: center;
+    background-color: #92BA92 ;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+}
+.Header__bankLogo__div{
+    display: flex;
+    width: 10%;
+    color: white;
+}
+.Header__bankLogo{
+    width: auto;
+    margin-top: 5px;
+    height: 40px;
+}
+.Header__logo__name{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: larger;
+}
+.Header__info{
+    margin-left: 15px;
+    width: 80%;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.Header__login__button{
+    margin-top: 15px;
+    width: 50px;
+    height: 35px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 49px; */
+    /* border-radius: 5px; */
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none; 
+    color:black;
+    margin-bottom: 15px;
+}
+.Header__login__button:hover{
+    background-color: aqua;
+}
+.Header__login__link{
+    text-decoration:underline;
+    color: white;
+}
+.Header__login__link:hover{
+    text-decoration:none;
+    color: #446A46;
+}

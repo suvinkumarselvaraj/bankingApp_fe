@@ -1,0 +1,24 @@
+p{
+    margin: 0;
+    border: 0;
+}
+.LoginButton__button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border: 1px solid #F9F3EE;
+    border-radius: 5px;
+    text-align: center;
+    /* vertical-align: middle; */
+    /* line-height: 49px; */
+    /* border-radius: 5px; */
+    font-size: 15px;
+    background-color: white;
+    text-decoration: none;
+}
+.LoginButton__button:hover{
+        background-color: #92BA92;
+        color:white;
+        font-weight: bold;
+        border-radius: 5px; 
+}

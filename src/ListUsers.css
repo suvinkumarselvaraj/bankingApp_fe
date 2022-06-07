@@ -1,0 +1,19 @@
+body{
+    overflow-x: hidden;
+}
+.ListUsers__container{
+  
+    width: 100%;
+    overflow: hidden;
+
+}
+.column__name__container{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    justify-content:space-evenly;
+    text-align: center;
+    border-bottom: 1px solid rgb(184, 170, 170);
+}

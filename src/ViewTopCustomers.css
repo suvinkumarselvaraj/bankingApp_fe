@@ -1,0 +1,9 @@
+.blockLevel{
+    
+}
+.UserAccount__container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: 1px solid grey;
+}
