@@ -1,6 +1,19 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import {useNavigate} from 'react-router-dom';
 function UserAccount() {
+        
+        useEffect(()=>{
+                fetch('/validation',{
+                        headers:{
+                                'Authorization':'Bearer SomeToken'
+                        },
+                        method:'GET',
+                        credentials:'include'
+                })
+                .then(res => res.json())
+                .then(data => console.log(data))
+                .catch(err => console.log(err));
+        })
   return (
     <div className='UserAccount__container1'>
         <div className='line111'>

@@ -1,21 +1,27 @@
 import React ,{useEffect,useState} from "react"
+import { useNavigate } from "react-router-dom";
 import './Transactions.css';
 
 function Transactions() {
-    var id = sessionStorage.getItem("customerId");
     var i = 0;
-    const [accounts,setAccounts] = useState([]);
-    useEffect(()=>{
-        fetch('http://localhost:8080/banking_app/transactionDetails?id='+id.toString())
-            .then(res => res.json())
-            .then(data=>{
-                setAccounts(data);
-                console.log(data);
-                for(var i = 0; i<accounts.length;i++){
-                    console.log(accounts[i].transactionType);
-                }
-            })
-        },[])
+            const navigate = useNavigate();
+            if(sessionStorage.getItem("customerId")==='undefined')
+            navigate("/login");
+            const [accounts,setAccounts] = useState([]);
+   useEffect(()=>{
+    var id = sessionStorage.getItem("customerId");
+    
+    fetch('http://localhost:8080/banking_app/transactionDetails?id='+id.toString())
+    .then(res => res.json())
+    .then(data=>{
+        setAccounts(data);
+        console.log(data);
+        for(var i = 0; i<accounts.length;i++){
+            console.log(accounts[i].transactionType);
+        }
+    })
+   },[])
+        
 
     return (
       <div className='Transactions__container'>

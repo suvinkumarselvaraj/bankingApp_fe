@@ -28,11 +28,11 @@ function Admin() {
             console.log(data);
             if(data.status === "success")
             {  
-                 dispatch({
+                dispatch({
                 type: 'Add_logged_admin',
                 logged_admin:data?.name
             });
-                navigate('/admin/home');
+                navigate('/admin/home?id=5');
             }
             else
             alert("login unsuccessful. check your credentials");

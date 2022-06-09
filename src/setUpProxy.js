@@ -1,6 +1,13 @@
 const express = require('express');
 const {constProxyMiddleWare,createProxyMiddleware} = require('http-proxy-middleware');
 module.exports = function(app){
+    // app.use(
+    //     createProxyMiddleware({
+    //         pathFilter:'**',
+    //         target:'http://localhost:8080/banking_app',
+    //         changeOrigin: true
+    //     })
+    // );   
  app.use(
      '/newAccount',
      createProxyMiddleware({
@@ -9,7 +16,7 @@ module.exports = function(app){
      })
  );
  app.use(
-    '/admin/login',
+    '/admin/*',
     createProxyMiddleware({
         target:'http://localhost:8080/banking_app',
         changeOrigin: true
@@ -59,6 +66,13 @@ app.use(
 );
 app.use(
     '/count',
+    createProxyMiddleware({
+        target:'http://localhost:8080/banking_app',
+        changeOrigin: true
+    })
+);
+app.use(
+    '/validation',
     createProxyMiddleware({
         target:'http://localhost:8080/banking_app',
         changeOrigin: true

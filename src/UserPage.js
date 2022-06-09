@@ -2,17 +2,28 @@ import React,{useEffect} from 'react'
 import { useStateValue } from './StateProvider'
 import './UserPage.css';
 import {Link,useNavigate} from 'react-router-dom';
+import Cookies from 'js-cookie'; 
+import { integerPropType } from '@mui/utils';
 function UserPage() {
   const navigate = useNavigate();
-  useEffect(()=>{
-    let cookies = document.cookie;
-    console.log(cookies);
-
+  // sessionStorage.getItem('accountNo').toString()
+    useEffect(()=>
+    {
+      console.log(document.cookie);
+      fetch('/validation',{
+        method:'GET',
+        credentials:'include'
+      })
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err));
+      
+      console.log(document.cookie);
     fetch('http://localhost:8080/banking_app/checktransactions?acc='+sessionStorage.getItem('accountNo').toString())
     .then(res => res.json())
     .then(data=>{
-        console.log(data.status5);
-        if(data.maintenance === "success"){
+      console.log(data);
+          if(data.maintenance === "success"){
           sessionStorage.removeItem("balance");
           sessionStorage.setItem("balance",data.getItem("balance"));
         }
@@ -23,9 +34,10 @@ function UserPage() {
         else{
         console.log("not yet");
         }
-    })
-  },[])
-    const [{active_user},dispatch] = useStateValue();
+        })  
+      })
+      
+  const [{active_user},dispatch] = useStateValue();
   return (
     <div className = 'UserPage__container'>
       <p>Account number: {sessionStorage.getItem("accountNo")}</p>

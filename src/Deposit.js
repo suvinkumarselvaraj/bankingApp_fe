@@ -9,7 +9,7 @@ function Deposit() {
     var amount = data.get("deposit_amount");
     if(amount<1000 && amount > 999999)
     {
-      alert("It is possible to depoist amount only within the given range: Rs. 1000 to Rs. 999999");
+      alert("It is possible to deposit amount only within the given range: Rs. 1000 to Rs. 999999");
       return;
     }
     const passwordDatas = {'accountNumber':sessionStorage.getItem("accountNo"),'oPass':data.get('password')};
@@ -18,7 +18,7 @@ function Deposit() {
             method: 'POST',
             headers:{
               'Accept':'application/json',
-                'Content-Type' : 'application/json'
+              'Content-Type' : 'application/json'
             },
             body: JSON.stringify(passwordDatas)
         })

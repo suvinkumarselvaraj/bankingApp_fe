@@ -76,7 +76,6 @@ function OpenAccountRight() {
           else
           {
             console.log("inside opening area");
-        // .catch((error) => console.log(error.message))
             var type = "Opening";
             sessionStorage.setItem("username",data.username);
             sessionStorage.setItem("accountNo",data.accountNumber);
@@ -91,10 +90,13 @@ function OpenAccountRight() {
             'balance': sessionStorage.getItem("balance"),
             'transactionType' : type
             }
+          
+
             fetch('/transactions',{
             method: 'POST',
             headers:{
-                'Content-Type' : 'application/x-www-form-urlencoded'
+                'Accept': 'application/json',
+                'Content-Type' : 'application/json'
             },
             body: JSON.stringify(datas)
             })
@@ -115,9 +117,9 @@ function OpenAccountRight() {
             })  
             .catch((error)=>{
                 console.log(error);
-            })  
-             }
-             })
+                })  
+            }
+            })
       .catch((error)=>{
         console.log(error);
          })
